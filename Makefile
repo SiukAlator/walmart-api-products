@@ -1,5 +1,5 @@
 api-up:
-	docker run -d -p 3000:3000 walmart-api
+	docker run -d -p 4000:4000 walmart-api
 
 api-ini:
 	make api-install
@@ -13,4 +13,4 @@ api-down:
 	docker rm -f walmart-api
 
 api-install:
-	docker build -t api-mobile-visitor .
+	docker build -t walmart-api .
